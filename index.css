@@ -30,6 +30,12 @@
   }
 }
 
+@media (max-width: 700px) {
+  html {
+    font-size: 69%;
+  }
+}
+
 body {
   background: #11141b;
   color: #ffffff;
@@ -461,3 +467,5 @@ section p {
     font-size: 1.2rem;
   }
 }
+
+/* LESS THAN 700  */
