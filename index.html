@@ -4,10 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" type="text/css" href="swiper-bundle.min.css" />
     <script
       src="https://kit.fontawesome.com/1d76cfb9e5.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="swiper-bundle.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -68,14 +72,106 @@
             </div>
           </section>
         </section>
-        <section id="projects" class="sectionComponent">
-          <div class="fourth-inner-div"><h1>Projects</h1></div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod odio
-              praesentium labore sapiente quia culpa.
-            </p>
+        <section id="projects" class="sectionComponent second">
+          <section class="sub-section">
+          <div class="second-div" style="margin-top: 2rem">
+            <h1>Projects</h1>
           </div>
+          <div class="card-box swiper">
+            <div class="card-content">
+              <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                  <a href="#">
+                    <div>
+                      <div class="image-content">
+                        <img class="card-image" alt="Project Image" src="https://plchldr.co/i/331x180"></img>
+                       </div>
+                       <div class="card-stuff">
+                         <div class="name-div">
+                           <h2 class="card-name">Project Name</h2>
+                         </div>
+                         <p class="card-description">web developer with 6 months of experience. I recently began my
+                           journey into the world of Javascript and have started using MERN
+                           Stack for my Web applications.</p>
+                       </div>
+                    </div>
+                  </a>       
+                </div>
+                <div class="card swiper-slide">
+                  <a href="#">
+                    <div>
+                      <div class="image-content">
+                        <img class="card-image" alt="Project Image" src="https://plchldr.co/i/332x180"></img>
+                       </div>
+                       <div class="card-stuff">
+                         <div class="name-div">
+                           <h2 class="card-name">Project Name</h2>
+                         </div>
+                         <p class="card-description">web developer with 6 months of experience. I recently began my
+                           journey into the world of Javascript and have started using MERN
+                           Stack for my Web applications.</p>
+                       </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card swiper-slide">
+                  <a href="#">
+                    <div>
+                      <div class="image-content">
+                        <img class="card-image" alt="Project Image" src="https://plchldr.co/i/333x180"></img>
+                       </div>
+                       <div class="card-stuff">
+                         <div class="name-div">
+                           <h2 class="card-name">Project Name</h2>
+                         </div>
+                         <p class="card-description">web developer with 6 months of experience. I recently began my
+                           journey into the world of Javascript and have started using MERN
+                           Stack for my Web applications.</p>
+                       </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card swiper-slide">
+                  <a href="#">
+                    <div>
+                      <div class="image-content">
+                        <img class="card-image" alt="Project Image" src="https://plchldr.co/i/334x180"></img>
+                       </div>
+                       <div class="card-stuff">
+                         <div class="name-div">
+                           <h2 class="card-name">Project Name</h2>
+                         </div>
+                         <p class="card-description">web developer with 6 months of experience. I recently began my
+                           journey into the world of Javascript and have started using MERN
+                           Stack for my Web applications.</p>
+                       </div>
+                    </div>        
+                </a>
+                </div>
+                <div class="card swiper-slide">
+                  <a href="#">
+                    <div>
+                      <div class="image-content">
+                        <img class="card-image" alt="Project Image" src="https://plchldr.co/i/335x180"></img>
+                       </div>
+                       <div class="card-stuff">
+                         <div class="name-div">
+                           <h2 class="card-name">Project Name</h2>
+                         </div>
+                         <p class="card-description">web developer with 6 months of experience. I recently began my
+                           journey into the world of Javascript and have started using MERN
+                           Stack for my Web applications.</p>
+                       </div>
+                    </div>
+                  </a>
+                </div>  
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
         </section>
         <section id="knowledge" class="sectionComponent fourth">
           <div class="fourth-div">
@@ -291,4 +387,21 @@
       });
     </script>
   </body>
+  <script>
+    var swiper = new Swiper(".card-content", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </html>

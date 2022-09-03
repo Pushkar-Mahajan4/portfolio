@@ -18,6 +18,14 @@
   background: #000;
 }
 
+.swiper-pagination-bullet-active {
+  background-color: #ff2359 !important;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  color: #ffffff !important;
+}
+
 @media (min-width: 800px) and (max-width: 1080px) {
   html {
     font-size: 93.75%;
@@ -48,6 +56,89 @@ select,
 button {
   font: 300 1rem "Poppins", sans-serif;
   position: relative;
+}
+
+.card-box{
+  max-width: 100%;
+  margin-top: 2rem;
+  overflow: visible;
+  width: 850px;
+  height: 400px
+}
+
+.card{
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: #11141b;
+  border-radius: 25px;
+  float: left;
+}
+
+.card-wrapper{
+  height: 100%;
+  width: 100%;
+}
+.card-content{
+  padding: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.card-name{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-stuff{
+  margin: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+.name-div {
+  display: flex;
+  margin-left: 17px;
+}
+
+.card-name::before {
+  content: "";
+  width: 5px;
+  height: 28px;
+  position: absolute;
+  top: 64%;
+  left: 14px;
+  transform: translateY(-50%);
+  background: #ff2359;
+}
+
+.card-image{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.card-description{
+  font-size: 0.7rem;
+  padding-left: 8px;
+  padding-right: 40px;
+}
+
+
+.image-content{
+  margin: 0;
+  border-radius: 20px;
+  height: 200px;
+  width: 100%;
+}
+
+.image-content .card-image{
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .container {
