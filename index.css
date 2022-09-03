@@ -22,8 +22,20 @@
   background-color: #ff2359 !important;
 }
 
+.swiper-pagination{
+  bottom: 0px !important;
+}
+
 .swiper-button-next, .swiper-button-prev{
   color: #ffffff !important;
+}
+
+.swiper-button-next{
+  right: 0 !important;
+}
+
+.swiper-button-prev{
+  left: 0 !important;
 }
 
 @media (min-width: 800px) and (max-width: 1080px) {
@@ -41,6 +53,11 @@
 @media (max-width: 700px) {
   html {
     font-size: 69%;
+  }
+  .card-name::before {
+    position: absolute !important;
+    top: 60% !important;
+    left: 14px;
   }
 }
 

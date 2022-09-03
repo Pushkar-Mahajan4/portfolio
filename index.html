@@ -88,7 +88,7 @@
                        </div>
                        <div class="card-stuff">
                          <div class="name-div">
-                           <h2 class="card-name">Project Name</h2>
+                           <h2 class="card-name">Project 1</h2>
                          </div>
                          <p class="card-description">web developer with 6 months of experience. I recently began my
                            journey into the world of Javascript and have started using MERN
@@ -105,7 +105,7 @@
                        </div>
                        <div class="card-stuff">
                          <div class="name-div">
-                           <h2 class="card-name">Project Name</h2>
+                           <h2 class="card-name">Project 2</h2>
                          </div>
                          <p class="card-description">web developer with 6 months of experience. I recently began my
                            journey into the world of Javascript and have started using MERN
@@ -122,7 +122,7 @@
                        </div>
                        <div class="card-stuff">
                          <div class="name-div">
-                           <h2 class="card-name">Project Name</h2>
+                           <h2 class="card-name">Project 3</h2>
                          </div>
                          <p class="card-description">web developer with 6 months of experience. I recently began my
                            journey into the world of Javascript and have started using MERN
@@ -139,7 +139,7 @@
                        </div>
                        <div class="card-stuff">
                          <div class="name-div">
-                           <h2 class="card-name">Project Name</h2>
+                           <h2 class="card-name">Project 4</h2>
                          </div>
                          <p class="card-description">web developer with 6 months of experience. I recently began my
                            journey into the world of Javascript and have started using MERN
@@ -156,7 +156,7 @@
                        </div>
                        <div class="card-stuff">
                          <div class="name-div">
-                           <h2 class="card-name">Project Name</h2>
+                           <h2 class="card-name">Project 5</h2>
                          </div>
                          <p class="card-description">web developer with 6 months of experience. I recently began my
                            journey into the world of Javascript and have started using MERN
@@ -391,7 +391,8 @@
     var swiper = new Swiper(".card-content", {
       slidesPerView: 3,
       spaceBetween: 30,
-      slidesPerGroup: 3,
+      slidesPerGroup: 1,
+      grabCursor: true,
       loop: true,
       loopFillGroupWithBlank: true,
       pagination: {
@@ -402,6 +403,17 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      breakpoints: {
+        0: {
+          slidesPerView: 1
+        },
+        850: {
+          slidesPerView: 2
+        },
+        950: {
+          slidesPerView: 3
+        }
+      }
     });
   </script>
 </html>
