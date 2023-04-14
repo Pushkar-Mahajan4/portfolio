@@ -22,19 +22,20 @@
   background-color: #ff2359 !important;
 }
 
-.swiper-pagination{
+.swiper-pagination {
   bottom: 0px !important;
 }
 
-.swiper-button-next, .swiper-button-prev{
+.swiper-button-next,
+.swiper-button-prev {
   color: #ffffff !important;
 }
 
-.swiper-button-next{
+.swiper-button-next {
   right: 0 !important;
 }
 
-.swiper-button-prev{
+.swiper-button-prev {
   left: 0 !important;
 }
 
@@ -75,15 +76,15 @@ button {
   position: relative;
 }
 
-.card-box{
+.card-box {
   max-width: 100%;
   margin-top: 2rem;
   overflow: visible;
   width: 850px;
-  height: 400px
+  height: 400px;
 }
 
-.card{
+.card {
   align-items: center;
   justify-content: center;
   margin: 0;
@@ -92,11 +93,11 @@ button {
   float: left;
 }
 
-.card-wrapper{
+.card-wrapper {
   height: 100%;
   width: 100%;
 }
-.card-content{
+.card-content {
   padding: 1.2rem;
   align-items: center;
   justify-content: center;
@@ -104,12 +105,12 @@ button {
   width: 100%;
 }
 
-.card-name{
+.card-name {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.card-stuff{
+.card-stuff {
   margin: 5px;
   height: 100%;
   width: 100%;
@@ -131,27 +132,26 @@ button {
   background: #ff2359;
 }
 
-.card-image{
+.card-image {
   padding: 0;
   margin: 0;
   width: 100%;
 }
 
-.card-description{
+.card-description {
   font-size: 0.7rem;
   padding-left: 8px;
   padding-right: 40px;
 }
 
-
-.image-content{
+.image-content {
   margin: 0;
   border-radius: 20px;
   height: 200px;
   width: 100%;
 }
 
-.image-content .card-image{
+.image-content .card-image {
   border-radius: 20px;
   height: 100%;
   width: 100%;
@@ -461,7 +461,8 @@ section p {
 
 @media (max-width: 750px) {
   .fourth-inner-div h1 {
-    font-size: 2rem;
+    font-size: 4rem;
+    margin-bottom: 5rem;
   }
   .fourth-inner-div h1::before {
     height: 38px;
@@ -476,7 +477,7 @@ section p {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 6rem;
+  gap: 5rem;
 }
 
 .fourth-inner-icon-inner {
