@@ -27,7 +27,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-width: 80%;
   max-width: 80%;
+
   /* margin-top: 100px; Note sure if needed */
 }
 
@@ -117,6 +119,13 @@
     rgba(0, 191, 255, 0.8),
     rgba(0, 191, 255, 0)
   );
+}
+
+.experience-details {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
 }
 
 .skills-line {
@@ -222,6 +231,7 @@ button {
   top: 0;
   bottom: 0;
   left: 50%;
+  height: 100%;
   transform: translateX(-50%);
 }
 
