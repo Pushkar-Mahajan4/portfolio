@@ -1,7 +1,8 @@
 :root {
   --black: #111111;
   --grad-blue: linear-gradient(270deg, #0072ff, #00bfff);
-  --grad-yellow: linear-gradient(270deg, #0072ff, #00bfff);
+  --grad-yellow: linear-gradient(270deg, #fa6834, #f2b225);
+  --grad-pink: linear-gradient(270deg, #d0097d, #781b7d);
   --white: #fff;
   --accents-7: #a5a4a4;
   --accents-6: #999999;
@@ -21,7 +22,7 @@
   margin: 0;
 }
 
-.about-content {
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,13 +40,24 @@
 }
 
 .about-badge {
+  background: var(--grad-blue);
+}
+
+.skills-badge {
+  background: var(--grad-yellow);
+}
+
+.exp-badge {
+  background: var(--grad-pink);
+}
+
+.badge {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 34px;
   height: 34px;
   color: var(--black);
-  background: var(--grad-blue);
   border-radius: 50%;
   font-size: 14px;
   font-weight: bold;
@@ -74,6 +86,17 @@
 
 .about-label {
   background: var(--grad-blue);
+}
+
+.skills-label {
+  background: var(--grad-yellow);
+}
+
+.exp-label {
+  background: var(--grad-pink);
+}
+
+.label {
   background-clip: text;
   color: transparent;
   margin-top: 10px;
@@ -81,16 +104,31 @@
   font-size: 2rem;
 }
 
-.about-line {
+.line {
   margin-top: 40px;
   width: 1px;
   height: 80px;
+  opacity: 0.7;
+}
+
+.about-line {
   background: linear-gradient(
     to top,
     rgba(0, 191, 255, 0.8),
     rgba(0, 191, 255, 0)
   );
-  opacity: 0.7;
+}
+
+.skills-line {
+  background: linear-gradient(
+    to top,
+    rgba(242, 178, 37, 1),
+    rgba(0, 191, 255, 0)
+  );
+}
+
+.exp-line {
+  background: linear-gradient(to top, rgba(208 9 125), rgba(0, 191, 255, 0));
 }
 
 .about-heading {
@@ -175,6 +213,16 @@ button {
   justify-content: center;
   min-width: 20rem;
   z-index: 100;
+}
+
+.timeline-line {
+  position: absolute;
+  width: 2px;
+  background-color: #555;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 ul {
