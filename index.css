@@ -26,11 +26,81 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 200px;
+  margin-bottom: 40px;
   min-width: 80%;
   max-width: 80%;
+}
 
-  /* margin-top: 100px; Note sure if needed */
+.exp-section {
+  padding-top: 50px;
+  height: 100%;
+}
+
+.exp-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  animation: slideFromLeft 0.8s ease-out forwards;
+  border: 1px solid var(--accents-2);
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 100%;
+  padding: 2rem;
+}
+
+.right-container .exp-content {
+  animation: slideFromRight 0.8s ease-out forwards;
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(-10px);
+  }
+  85% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(10px);
+  }
+  85% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.experience-details::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 99%;
+  background-color: var(--accents-2);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  /* margin-left: -1px; */
+  transform: translateX(-50%);
+  z-index: 5;
 }
 
 .about-item {
@@ -125,7 +195,8 @@
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 10px 0;
+  border: 2px solid pink;
 }
 
 .skills-line {
@@ -200,6 +271,7 @@ button {
   justify-content: center;
   min-height: 80vh;
   min-width: 100vw;
+  z-index: -9;
 }
 
 .navbar {
@@ -211,6 +283,7 @@ button {
   overflow: hidden;
   height: 50px;
   width: 100vw;
+  z-index: 10000;
 }
 
 .navbar-container {
@@ -221,7 +294,36 @@ button {
   display: flex;
   justify-content: center;
   min-width: 20rem;
-  z-index: 100;
+  z-index: 10000;
+}
+
+.text-box {
+  position: relative;
+  width: 50%;
+  padding: 2rem;
+}
+
+.text-box img {
+  border-radius: 50%;
+  right: -30px;
+  top: 125px;
+  color: var(--accents-7);
+  position: absolute;
+  width: 3rem;
+  height: 5rem;
+  z-index: 10;
+}
+
+.left-container {
+  left: 0;
+}
+
+.right-container {
+  left: 50%;
+}
+
+.right-container img {
+  left: -30px;
 }
 
 .timeline-line {
