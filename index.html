@@ -10,6 +10,41 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              // When text-box becomes visible
+              if (entry.isIntersecting) {
+                console.log("Entry");
+                console.log(entry);
+                if (entry.target.closest(".right-container")) {
+                  entry.target.classList.add("animate-from-right");
+                } else {
+                  entry.target.classList.add("animate-from-left");
+                }
+
+                // Stop observing after animation is triggered
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.1, // Triggers when at least 10% of the element is visible
+          }
+        );
+
+        // Start observing the text-box
+        console.log("Triggered");
+        const textBox = document.querySelector(".exp-content");
+        const rightBox = document.querySelector(
+          ".right-container .exp-content"
+        );
+        observer.observe(textBox);
+        observer.observe(rightBox);
+      });
+    </script>
   </head>
   <body>
     <header class="navbar">
@@ -22,7 +57,7 @@
       </nav>
     </header>
     <main class="main">
-      <section class="home-content">
+      <section class="content home-content">
         <div>
           <h1 class="headline">
             Experienced software engineer
