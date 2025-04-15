@@ -24,6 +24,10 @@
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -344,8 +348,9 @@ button {
   border: 1px solid var(--accents-3);
   border-radius: 30px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  min-width: 20rem;
+  min-width: 30rem;
   z-index: 10000;
 }
 
