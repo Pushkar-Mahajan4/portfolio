@@ -11,6 +11,8 @@
   --accents-3: #444444;
   --accents-2: #333333;
   --accents-1: #111111;
+
+  scrollbar-color: var(--accents-2) transparent;
 }
 
 * {
@@ -201,16 +203,65 @@
   padding: 10px 0;
 }
 
-.skills-line {
+.svg-parent-container {
+  width: 100%;
+  max-width: 54rem;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.svg-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-container p {
   background: linear-gradient(
     to top,
     rgba(242, 178, 37, 1),
     rgba(0, 191, 255, 0)
   );
+  background-clip: text;
+  transition: 0.2s;
 }
 
-.exp-line {
-  background: linear-gradient(to top, rgba(208 9 125), rgba(0, 191, 255, 0));
+.svg-container svg {
+  transition: 0.2s;
+}
+
+.svg-container:hover p {
+  color: rgba(242, 178, 37, 1);
+  /* color: linear-gradient(
+    270deg,
+    #d0097d,
+    #781b7d,
+    #00c6ff,
+    #0072ff,
+    #fa6834,
+    #f2b225,
+    #00c6ff,
+    #d0097d,
+    #781b7d
+  );
+  animation: gradientShift 16s ease infinite; */
+}
+
+.svg-container:hover svg {
+  fill: url(#myGradient);
+}
+
+.skills-line {
+  background: linear-gradient(to top, rgba(242, 178, 37, 1), rgb(250, 104, 52));
+}
+
+.exp {
+  background: linear-gradient(to top, rgba(208 9 125));
 }
 
 .about-heading {
@@ -269,10 +320,9 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
   justify-content: center;
-  min-height: 80vh;
-  min-width: 100vw;
+  min-height: calc(80vh = 20px);
+  min-width: calc(100vw - 16px);
   z-index: -9;
 }
 
@@ -350,7 +400,7 @@ li {
 }
 
 section {
-  border: 2px solid white;
+  /* border: 2px solid white; */
   height: 100vh;
 }
 
