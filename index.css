@@ -12,7 +12,6 @@
   --accents-2: #333333;
   --accents-1: #111111;
   --accents-0: #1a1a1a;
-
   scrollbar-color: var(--accents-2) transparent;
 }
 
@@ -23,6 +22,10 @@
   font-family: "Geist", sans-serif;
   padding: 0;
   margin: 0;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 a {
@@ -332,6 +335,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: start;
+  margin-top: 200px;
 }
 
 .main {
